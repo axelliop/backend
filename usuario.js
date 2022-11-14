@@ -28,7 +28,7 @@ class Usuario {
 /* obtener nombres de libros */
 
 getBookNames(){
-    return this.libros.libros1  /* llamo a libros la constructora y entro a libros uno y libros dos, sus dos objetos */
+    return this.libros  /* llamo a libros la constructora y entro a libros uno y libros dos, sus dos objetos */
 }
 
 /* obtener nombres de libros */
@@ -40,21 +40,25 @@ addMascota(mascotas){
  this.mascotas.push(mascotas)
 }
 
-
 /* añadir mascotas */
+
+/* añadir libros */
+addBook(libros) {
+    this.libros.push(libros)
+}
+/* añadir libros */
+
 
 
 }
 
 
 const admin = new Usuario('Axel ', 'Lima ',
- {libros1: 'efecto mariposa ',
-libros2: 'stephen king'
-}, 
+ [{libros1: 'efecto mariposa '}, {libros2: 'stephen king'}], 
 ['perros', 'gatos']
 )
 
-
+admin.addBook({libros3: 'delfin asesino'})
 admin.addMascota('cocodrilo')
 const names = admin.getFullName()
 const contarMascotas = admin.countMascotas()
@@ -64,7 +68,6 @@ const libritos = admin.getBookNames()
 
 
 /* pushear libros */
-admin.libros.libros3 = 'asdasda' 
 /* pushear libros */
 
 
@@ -76,7 +79,7 @@ admin.libros.libros3 = 'asdasda'
 console.log(`su nombre es ${names}`)
 console.log(`sus mascotas son ${contarMascotas}`)
 console.log(`las mascotas se llaman ${admin.mascotas}`)
-console.log(`los libros son ${libritos}`)
+console.log(libritos)
 
 
 
