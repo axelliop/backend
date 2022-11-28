@@ -1,0 +1,20 @@
+aca tendria que ir todo lo que voy agregando
+
+const archivotxt = [{
+    id: 1,
+        title: 'helado vainilla',
+        price: 700,
+        thumbnail: ''
+    },
+    {
+        id: 2,
+        title: 'helado cereza',
+        price: 700,
+        thumbnail: ''},
+        
+        {
+        id: 3,
+        title: 'helado chocolate',
+        price: 700,
+        thumbnail: ''}
+}]
